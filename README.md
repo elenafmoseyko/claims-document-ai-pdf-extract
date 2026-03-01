@@ -1,10 +1,5 @@
-#Document AI pipeline
-
 A Document AI pipeline that reads PDF medical claims / EOB reports and outputs
 structured Excel exhibits, JSON data, and narrative summaries — using Claude.
-
-Built by **Elena | LedgrAI** · Mirrors the architecture of LedgrAI's ASC 842
-lease PDF → amortization schedule pipeline, applied to healthcare claims.
 
 ---
 
@@ -46,19 +41,6 @@ pip install -r requirements.txt
 # Run with the included Excel demo data
 python demo_from_excel.py --input data/Company_ABC_Claims_Data.xlsx
 ```
-
-### Full PDF pipeline (requires ANTHROPIC_API_KEY)
-```bash
-export ANTHROPIC_API_KEY=sk-ant-...
-
-# Single PDF
-python -m src.pipeline --input data/claims_report.pdf
-
-# Batch — process all PDFs in a folder
-python -m src.pipeline --input data/pdf_folder/ --batch
-```
-
----
 
 ## What PDFs does it handle?
 
@@ -115,10 +97,6 @@ Traditional PDF → Excel workflows require:
 - Custom regex per document template
 - Manual QA of every extraction
 - Hours of reformatting
-
-This pipeline uses layout-aware extraction + LLM understanding to handle
-**variable document formats** without template engineering — the same
-challenge LedgrAI solves for lease accounting PDFs.
 
 ---
 
