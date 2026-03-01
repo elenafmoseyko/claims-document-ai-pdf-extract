@@ -1,0 +1,20 @@
+# Core
+pandas>=2.0
+openpyxl>=3.1
+numpy>=1.24
+
+# PDF extraction
+pdfplumber>=0.10
+pypdf>=4.0
+
+# LLM (Claude)
+anthropic>=0.30
+
+# OCR fallback for scanned PDFs (optional)
+# pytesseract>=0.3
+# pillow>=10.0
+# pdf2image>=1.16
+
+# Dev / testing
+pytest>=7.0
+python-dotenv>=1.0
