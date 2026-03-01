@@ -12,10 +12,10 @@ PDF Input
 [Extractor]   ── pdfplumber: layout-aware text + table extraction
     │
     ▼
-[Classifier]  ── Claude: identify page types (PMPM table, EOB, narrative)
+[Classifier]  ── Identify page types (PMPM table, EOB, narrative)
     │
     ▼
-[LLM Parser]  ── Claude: structured JSON extraction with schema enforcement
+[LLM Parser]  ── Structured JSON extraction with schema enforcement
     │
     ▼
 [Validator]   ── cross-foot checks, completeness, format validation
@@ -99,8 +99,3 @@ Traditional PDF → Excel workflows require:
 - Hours of reformatting
 
 ---
-
-## Related
-
-- 🤖 [`agentic-claims-analyst`](../agentic-claims-analyst) — LangGraph agent for Excel/CSV claims analysis
-- 🏢 [LedgrAI](https://ledgrai.com) — agentic AI for ASC 842 / IFRS 16 lease accounting
